@@ -1,0 +1,134 @@
+body{
+    background: #353866;
+}
+
+.logo{
+    width: 300px;
+    height: 250px;
+    
+}
+.logoMobile{
+    display: none;
+   color: #AAABD3;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: 30%;
+    margin-top: -10%;
+    list-style: none;
+    
+}
+a{
+    color:#AAABD3;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; 
+
+}
+.descp{
+    margin-top: 15%;
+    text-align: center;
+    font-family:  sans-serif;
+    color:#AAABD3;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+   
+    margin-top: 5%;
+    
+}
+.imgCaja1,.imgCaja2, .imgCaja3{
+    margin-top: 0%;
+    width: 300px;
+    height: 300px;
+}
+.descp1, .descp2, .descp3{
+    margin-top: -2px;
+    text-align: center;
+    border: 1px solid #AAABD3;
+    font-family: 'Roboto', sans-serif;
+    
+    width: 300px;
+}
+
+.logo2{
+    margin-top: 10%;
+    width: 200px;
+    height: 150px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 0;
+    width: 90%;
+}
+
+@media only screen and (max-width: 425px) {
+
+    body{
+        margin: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .logoMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        flex-wrap: wrap;
+        width: 30%;
+        
+       
+    }
+    
+   .name{
+       margin-bottom: 0px;
+       font-size: 13px;
+       
+   }
+   .work{
+    margin-top: 0;
+    font-size: 9px;
+    color: #8C9EFF;
+   }
+
+     .menu{
+       display: flex;
+       flex-direction: column; 
+       align-items: center;  
+       width: 80%;
+       height: 80px;
+       margin: 0;
+       font-size: larger;
+     
+       
+   }
+   .container{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-content: center;
+       width: 80%;
+       margin-left: 10%;
+       margin-right: 10%;
+   }
+   .descp{
+       font-size: small;
+   }
+   .logo2{
+       display: none;
+   }
+
+   footer{
+       display: none;
+   }
+  }

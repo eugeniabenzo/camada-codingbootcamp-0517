@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="empresa.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <title>#Numeral* Bags & Clothes</title>
+</head>
+
+<body>
+    <header>
+        <div class="textos">
+            <h1>#Numeral </h1>
+            <h1> Clothes & Shoes</h1>
+            <button class="suscribite" href="#" id="abrir"> Suscribete a este canal</button>
+          
+        </div>
+    </header>
+    <div id="miModal" class="modal">
+        <div class="flex" id="flex">
+            <div class="contenido-modal">
+                <div class="modal-header flex">
+                    <h2>#Numeral Newsletter</h2>
+                    <span class="close" id="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="img-modal">
+                        <img class="img-Modal" src="./images/img2.jpg">
+                    </div>
+                    <p> ¿Quéres Suscribirte a nuestras novedades?</p>
+                    <input type="email" name="email">
+                    <button class="button-enviar"> Enviar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider-Hijos transformacion">
+            <img src="./images/tienda.jpg">
+
+        </div>
+
+        <div class="slider-Hijos transformacion">
+            <img src="images/backpackblack.jpg">
+        </div>
+
+        <div class="slider-Hijos transformacion">
+            <img src="./images/backpack.jpg">
+        </div>
+    </div>
+
+    <div class="direcciones">
+        <a href="" class="anterior"onclick="siguienteSlider"(-1)>&#10094;</a>
+        <a href="" class="siguiente"onclick="siguienteSlider"(1)>&#10095;</a>
+    </div>
+
+
+    <div class="barras">
+        <span class="barra active click" onclick="positionSlide(1)"></span>
+        <span class="barra" onclick="positionSlide(2)"></span>
+        <span class="barra" onclick="positionSlide(3)"></span>
+    </div>
+    <script src="empresa.js"></script>
+</body>
+
+</html>

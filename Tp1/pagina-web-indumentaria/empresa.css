@@ -1,0 +1,218 @@
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background: #f2f2f2;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    header{
+        width: 100%;
+        height:50%;
+        background: url('./images/portadabag.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .flex{
+        width: 100%;
+        height:50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .textos{
+        padding:300px;
+        color:#fff;
+        text-align: center;
+       
+        
+    }
+    
+    h1{
+        font-size: 40px;
+        margin-bottom:20px;
+    }
+    
+    .suscribite{
+        text-decoration: none;
+        font-size:20px;
+        display: inline-block;
+        padding: 7px;
+        width: 220px;
+        border:1px solid #fff;
+        border-radius: 10px;
+        color:#fff;
+        cursor: pointer;
+    }
+    a:hover{
+        background: #000;
+        color:#fff;
+        border:1px solid #000;
+    }
+    
+    .modal{
+        display: none;
+        position: fixed;
+        z-index:1;
+        overflow: auto;
+        left: 0;
+        top:0;
+        width: 100%;
+        height:100%;
+        background: rgba(0, 0, 0, 0.452);
+    }
+    
+    .contenido-modal{
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        width: 30%;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+        animation-name: modal;
+        animation-duration: 1s;
+    }
+    @keyframes modal{
+        from{top:-330px; opacity:0;}
+        to{top:0; opacity:1;}
+    }
+    .close{
+        color: #f2f2f2;
+        font-size:30px;
+        font-weight: bold;
+    }
+    .close:hover{
+        color:#7f8c8d;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-header, .footer{
+        padding: 8px 16px;
+        background: #9aa5b1;
+        color:#f2f2f2;
+    }
+    
+    p{
+        text-align: center;
+    }
+    
+    .modal-body{
+        padding: 20px 16px;
+    }
+
+    .img-Modal{
+        width: 100%;
+    }
+
+    input{
+        width: 50%;
+       margin-left: 25%;
+       bottom: 40%;
+    }
+    .button-enviar{
+        background-color: #555555;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-left: 40%;
+        margin-top: 4%;
+        cursor: pointer;
+      }
+
+
+    .slider-container {
+        max-width: 100%;
+        max-height: 100vh;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+       /* margin: auto;*/
+    } 
+    /*.slider-Hijos{
+        display: none;
+        transition: 2s;
+        max-height: 100vh;
+
+
+    }*/
+
+    .slider-Hijos img{
+        width: 100%;
+        max-height: 100vh;
+        height: inherit;
+        object-fit: cover;
+        vertical-align: top;
+        transition: 1s;
+    }
+
+    .direcciones{
+         width: 20%; 
+        height: 5%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .direcciones a{
+        color: #fff;
+        display: inline-block;
+        padding: 2px;
+        text-decoration: none;
+    }
+
+    .direcciones:hover{
+        background: rgba(255,255, 255, .5);
+        transition: .5s;
+
+    }
+
+    .barras{
+        position: absolute;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        height: 10px;
+    }
+    
+    .barra{
+        cursor: pointer;
+        height:2px;
+        width: 25px;
+        margin: 0 20px;
+        background: #dcdde1;
+        display: inline-block;
+        margin-left: 3px;
+    }
+
+    .active{
+        background-color: #e74c3c;
+    }
+
+    .transformacion{
+        animation-name: fade;
+        animation-duration: 1.5s;    
+    }
+    
+    @keyframes fade {
+        from {opacity: .4;}
+        to{opacity:1;}
+    }
+    
